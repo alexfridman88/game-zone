@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "removeComments": true,
+    "types": ["webpack-env"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "watchOptions": {
+    "watchFile": "dynamicprioritypolling",        // Valid option for watchFile
+    "watchDirectory": "dynamicprioritypolling",   // Valid option for watchDirectory
+    "fallbackPolling": "dynamicPriority",         // Fallback option
+    "synchronousWatchDirectory": true             // Optional, if you want synchronous directory watching
+  }
+}
