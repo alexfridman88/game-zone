@@ -11,6 +11,7 @@ export class GameComponent {
     private gravity: number = 1;
     private gameSpeed: number = 10;
 
+
     constructor(canvas: HTMLCanvasElement, private inputHandler: InputHandler) {
         this.canvas = canvas;
         this.ctx = this.canvas.getContext('2d') as CanvasRenderingContext2D;
